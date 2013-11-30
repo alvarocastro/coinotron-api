@@ -7,7 +7,7 @@ try {
 		Coinotron::COIN_LTC,
 		Coinotron::COIN_FTC
 	));
-	$c->login('your_user', 'your_password');
+	$c->login('YOUR_USER', 'YOUR_PASSWORD');
 	$data = $c->getAccountData();
 
 	var_dump($data);
@@ -16,7 +16,6 @@ try {
 }
 
 /*
-
 header('Content-Type: application/json');
 echo json_encode($data);
  */

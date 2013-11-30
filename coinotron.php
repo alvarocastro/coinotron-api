@@ -60,7 +60,7 @@ class Coinotron
 
 		$doc = str_get_html($html);
 		if ($error = $doc->find('#content font[color="red"]', 0)) {
-			echo $error->plaintext;die;
+			throw new Exception('Login error: ' . $error->plaintext, 3); ;
 		}
 	}
 
